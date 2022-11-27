@@ -3,8 +3,8 @@ Console.WriteLine("Ведите цифру дня недели");
 void WeekDay(int arg)
 {
     if (arg == 6 || arg == 7) Console.WriteLine("Ура! Выходной!");
-    if (arg >= 1 && arg <= 5) Console.WriteLine("Опять на работу :(");
-    if (arg < 1 || arg > 7) Console.WriteLine("Нет такого дня"); //Сильно ругается на else в конструкции
+    else if (arg >= 1 && arg <= 5) Console.WriteLine("Опять на работу :(");
+    else Console.WriteLine("Нет такого дня");
 }
 
 try
