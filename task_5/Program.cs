@@ -2,9 +2,8 @@
 Console.WriteLine("Введите количество программистов");
 try
 {
-
-int num = Math.Abs(Convert.ToInt32(Console.ReadLine()));
-numbProg(num);
+    int num = Math.Abs(Convert.ToInt32(Console.ReadLine()));
+    numbProg(num);
 }
 catch
 {
