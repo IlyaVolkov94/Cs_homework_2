@@ -25,30 +25,24 @@ stopWatch.Start();
 // Console.Write(result);
 
 
-string GetFizz(int num)
+int GetFizz(int num)
 {
-    string res = string.Empty;
-    if(num%3==0)
-    return res="Fizz";
+    if(num%3==0) Console.Write("Fizz");
     else
-    return res=res+num;
+    return num;
 }
 
-string GetBuzz(int num)
+int GetBuzz(int num)
 {
-    string res = string.Empty;
-    if(num%5==0)
-    return res="Buzz";
+    if(num%5==0) Console.Write("Buzz");
     else
-    return string.Empty;
+    return num;
 }
 
-string result = string.Empty;
 for(int i=1;i<=100;i++)
 {
-    result=result+GetFizz(i)+GetBuzz(i)+" ";
+    Console.Write(GetFizz(GetBuzz(i)));
 }
-Console.Write(result);
 
 
 
