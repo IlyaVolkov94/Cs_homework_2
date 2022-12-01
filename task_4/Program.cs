@@ -24,6 +24,7 @@ stopWatch.Start();
 // }
 // Console.Write(result);
 
+
 //Процедурным способом
 string GetFuzz(int num)
 {
@@ -51,8 +52,6 @@ for(int i=1;i<=100;i++)
 
 }
 Console.WriteLine(result);
-
-
 
 
 stopWatch.Stop();
