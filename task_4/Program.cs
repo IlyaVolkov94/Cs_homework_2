@@ -29,7 +29,7 @@ string GetFizz(int num)
 {
     string res = string.Empty;
     if(num%3==0)
-    return res="Fizz" + GetBuzz(num);
+    return res="Fizz";
     else
     return res=res+num;
 }
@@ -40,13 +40,13 @@ string GetBuzz(int num)
     if(num%5==0)
     return res="Buzz";
     else
-    return res="";
+    return string.Empty;
 }
 
 string result = string.Empty;
 for(int i=1;i<=100;i++)
 {
-    result=result+GetFizz(i)+" ";
+    result=result+GetFizz(i)+GetBuzz(i)+" ";
 }
 Console.Write(result);
 
