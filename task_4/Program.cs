@@ -4,12 +4,12 @@
 // Задача может показаться очевидной, но нужно получить наиболее простое и красивое решение.
 using System.Diagnostics;
 
-string undRes =string.Empty;
 Stopwatch stopWatch = new Stopwatch();
 stopWatch.Start();
 
 // Стихийный способ:
 // string result =string.Empty;
+// string undRes =string.Empty;
 // for(int i=1;i<=100;i++)    
 // {
 //     if(i%3==0)
@@ -25,10 +25,32 @@ stopWatch.Start();
 // Console.Write(result);
 
 
+string GetFizz(int num)
+{
+    string res = string.Empty;
+    if(num%3==0)
+    return res= res+ "Fizz" + GetBuzz(num);
+    else
+    return res= res+num;
+    res = string.Empty;
+}
 
+string GetBuzz(int num)
+{
+    string res = string.Empty;
+    if(num%5==0)
+    return res="Buzz";
+    else
+    return res="";
+    res = string.Empty;
+}
 
+string result = string.Empty;
+for(int i=1;i<=100;i++)
+{
+    Console.WriteLine(result=result+GetFizz(i)+" ");
 
-
+}
 
 
 
