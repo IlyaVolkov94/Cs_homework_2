@@ -29,10 +29,9 @@ string GetFizz(int num)
 {
     string res = string.Empty;
     if(num%3==0)
-    return res= res+ "Fizz" + GetBuzz(num);
+    return res="Fizz" + GetBuzz(num);
     else
-    return res= res+num;
-    res = string.Empty;
+    return res=res+num;
 }
 
 string GetBuzz(int num)
@@ -42,16 +41,14 @@ string GetBuzz(int num)
     return res="Buzz";
     else
     return res="";
-    res = string.Empty;
 }
 
 string result = string.Empty;
 for(int i=1;i<=100;i++)
 {
-    Console.WriteLine(result=result+GetFizz(i)+" ");
-
+    result=result+GetFizz(i)+" ";
 }
-
+Console.Write(result);
 
 
 
