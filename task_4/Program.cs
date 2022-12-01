@@ -55,8 +55,6 @@ Console.Write(result);
 
 
 
-
-
 stopWatch.Stop();
 TimeSpan ts = stopWatch.Elapsed;
 Console.WriteLine();
