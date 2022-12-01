@@ -49,8 +49,6 @@ for(int i=1;i<=100;i++)
 
 
 
-
-
 stopWatch.Stop();
 TimeSpan ts = stopWatch.Elapsed;
 Console.WriteLine();
