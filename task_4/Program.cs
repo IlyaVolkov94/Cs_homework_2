@@ -24,27 +24,33 @@ stopWatch.Start();
 // }
 // Console.Write(result);
 
-
-void GetFizz(int num)
+//Процедурным способом
+string GetFuzz(int num)
 {
-    if(num%3==0) Console.Write("Fizz");
+    string res = string.Empty;
+    if(num%3==0) 
+    return res ="Fuzz";
     else
+    return string.Empty;
     
 }
 
-int GetBuzz(int num)
+string GetBuzz(int num)
 {
-    if(num%5==0) Console.Write("Buzz");
+    string res = string.Empty;
+    if(num%5==0)
+    return res ="Buzz";
     else
-    return num;
+    return string.Empty;
 }
-
+string result = string.Empty;
 for(int i=1;i<=100;i++)
 {
-    Console.Write(GetFizz(GetBuzz(i)));
+    if (i%3!=0 && i%5!=0) result=result+i;
+    result= result+ GetBuzz(i)+ GetFuzz(i)+" ";
+
 }
-
-
+Console.WriteLine(result);
 
 
 
