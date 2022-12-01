@@ -2,15 +2,15 @@
 Console.WriteLine("Введите количество программистов");
 try
 {
-    int num = Math.Abs(Convert.ToInt32(Console.ReadLine()));
-    numbProg(num);
+    int numberProg = Math.Abs(Convert.ToInt32(Console.ReadLine()));
+    GetEnding(numberProg);
 }
 catch
 {
     Console.WriteLine("Ошибка выполнения");
 }
 
-void numbProg(int arg)
+void GetEnding(int arg)
 {
     string res = String.Empty;
     if (arg % 100 >= 10 && arg % 100 <= 14) res = "ов";
