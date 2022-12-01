@@ -25,11 +25,11 @@ stopWatch.Start();
 // Console.Write(result);
 
 
-int GetFizz(int num)
+void GetFizz(int num)
 {
     if(num%3==0) Console.Write("Fizz");
     else
-    return num;
+    
 }
 
 int GetBuzz(int num)
