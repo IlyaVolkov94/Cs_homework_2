@@ -46,8 +46,9 @@ string GetBuzz(int num)
 string result = string.Empty;
 for(int i=1;i<=100;i++)
 {
-    Console.Write(GetFizz(i)+GetBuzz(i)+" ");
+    result=result+GetFizz(i)+GetBuzz(i)+" ";
 }
+Console.Write(result);
 
 
 
