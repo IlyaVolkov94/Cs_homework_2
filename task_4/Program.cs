@@ -8,7 +8,9 @@ string result =string.Empty;
 string undRes =string.Empty;
 Stopwatch stopWatch = new Stopwatch();
 stopWatch.Start();
-for(int i=1;i<=100;i++)
+
+// Стихийный способ:
+for(int i=1;i<=100;i++)    
 {
     if(i%3==0)
     {
@@ -21,6 +23,9 @@ for(int i=1;i<=100;i++)
     undRes=string.Empty;
 }
 Console.Write(result);
+
+
+
 stopWatch.Stop();
 TimeSpan ts = stopWatch.Elapsed;
 Console.WriteLine();
